@@ -12,7 +12,7 @@ def contact(request):
 	if request.method == 'POST':
 		your_name = request.POST['your-name']
 		your_email = request.POST['your-email']
-		your_phone = request.POST['your-phone']
+		
 		message_subject = request.POST['message-subject']
 		your_message = request.POST['your-message']
 		
@@ -27,7 +27,7 @@ def contact(request):
 		return render(request, 'contact.html', {
 			'your_name': your_name,
 			'your_email': your_email,
-			'your_phone': your_phone,
+			
 			'message_subject': message_subject,
 			'your_message': your_message,
 			})
