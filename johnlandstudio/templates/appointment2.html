@@ -1,0 +1,163 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Johnland Studio</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+      <!-- Favicon -->
+      <link href="{% static 'johnlandstudio/images/favicon.png' %}" rel="icon">
+
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="{% static 'johnlandstudio/css/bootstrap.min.css' %}">
+      <!-- style css -->
+      <link rel="stylesheet" href="{% static 'johnlandstudio/css/style.css' %}">
+      <!-- responsive-->
+      <link rel="stylesheet" href="{% static 'johnlandstudio/css/responsive.css' %}">
+      <!-- awesome fontfamily -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout inner_page">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="{% static 'johnlandstudio/images/loading.gif' %}" alt="" /></div>
+      </div>
+      <!-- end loader -->
+      <div id="mySidepanel" class="sidepanel">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a href="index.html">Home</a>
+         <a href="about.html">About</a>
+         <a href="service.html">Services</a>
+         <a href="shop.html">Shop</a>
+         <a href="contact.html">Contact</a>
+         <a class="active" href="appointment.html">Appointment</a>
+      </div>
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="head-top">
+            <div class="container-fluid">
+               <div class="row d_flex">
+                  <div class="col-sm-3">
+                     <div class="logo">
+                        <a href="index.html"><img src="{% static 'johnlandstudio/images/logo2.png' %}" /></a>
+                     </div>
+                  </div>
+                  <div class="col-sm-9">
+                     <ul class="email text_align_right">
+                        <li> <button class="openbtn" onclick="openNav()"><img src="{% static 'johnlandstudio/images/menu_btn.png' %}"></button></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header -->
+  <!-- Appointment Start -->
+<center>
+   <br><br><br><br><br>
+   <center>
+      <h1>Review Your Information</h1>
+         <h2><strong>Your Name:</strong> {{your_name}}<br/></h2>
+         <h2><strong>Phone:</strong> {{your_phone}}<br/></h2>
+         <h2><strong>Email:</strong> {{your_email}}<br/></h2>
+         <h2><strong>Appointment Date:</strong> {{your_date}}<br/></h2>
+         <h2><strong>Appointment Time:</strong> {{your_time}}<br/></h2>
+         <h2><strong>Service:</strong> {{your_service}}<br/></h2>
+   </center>
+         <br><br>
+         <h3><center><strong>Note: </strong> This appointment has not been confirmed yet we will call you shortly to confirm your appointment.</center></h3>
+</center>
+<br><br><br>
+    <!-- Appointment End -->
+      <!-- footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <a class="logo_footer"><img src="{% static 'johnlandstudio/images/logo2.png' %}" alt="#"/></a>
+                  </div>
+                  <div class="col-md-5">
+                     <div class="Informa conta">
+                        <h3>Adderess</h3>
+                        <ul>
+                           <li> Victors Chapel, <br>Karatina
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="Informa helpful">
+                        <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="about.html">About</a></li>
+                           <li><a href="service.html">Services</a></li>
+                           <li><a href="shop.html">Shop</a></li>
+                           <li><a href="contact.html">Contact</a></li>
+                           <li><a href="appointment.html">Appointment</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="Informa conta">
+                        <h3>Contact Us</h3>
+                        <ul>
+                           <li> <a href="Javascript:void(0)"> 897648934
+                              </a>
+                           </li>
+                           <li> <a href="Javascript:void(0)">  john123@gmail.com
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <ul class="social_icon text_align_center">
+                     <ul class="social_icon text_align_center">
+                        <li> <a href="Javascript:void(0)"><i class="fa fa-facebook-f"></i></a></li>
+                        <li> <a href="Javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+                        <li> <a href="Javascript:void(0)"><i class="fa fa-youtube"></i></a></li>
+                        <li> <a href="Javascript:void(0)"><i class="fa fa-whatsapp"></i></a></li>
+                        <li> <a href="Javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-3">
+                     <div class="Informa">
+                        <h3>Newsletter</h3>
+                        <form class="newslatter_form">
+                           <input class="ente" placeholder="Enter your email" type="text" name="Enter your email">
+                           <button class="subs_btn">Subscribe</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright text_align_center">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-10 offset-md-1">
+                        <p>© 2020 All Rights Reserved. Design by John Mwangi <a href="https://html.design/"> Johnland Studio</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="{% static 'johnlandstudio/js/jquery.min.js' %}"></script>
+      <script src="{% static 'johnlandstudio/js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'johnlandstudio/js/jquery-3.0.0.min.js' %}"></script>
+      <script src="{% static 'johnlandstudio/js/custom.js' %}"></script>
+   </body>
+</html>

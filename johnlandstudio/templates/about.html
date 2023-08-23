@@ -1,0 +1,174 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Johnland Studio</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+      <!-- Favicon -->
+      <link href="{% static 'johnlandstudio/images/favicon.png' %}" rel="icon">
+
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="{% static 'johnlandstudio/css/bootstrap.min.css' %}">
+      <!-- style css -->
+      <link rel="stylesheet" href="{% static 'johnlandstudio/css/style.css' %}">
+      <!-- responsive-->
+      <link rel="stylesheet" href="{% static 'johnlandstudio/css/responsive.css' %}">
+      <!-- awesome fontfamily -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout inner_page">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="{% static 'johnlandstudio/images/loading.gif' %}" alt="" /></div>
+      </div>
+      <!-- end loader -->
+      <div id="mySidepanel" class="sidepanel">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a href="index.html">Home</a>
+         <a class="active" href="about.html">About</a>
+         <a href="service.html">Services</a>
+         <a href="shop.html">Shop</a>
+         <a href="contact.html">Contact</a>
+         <a href="appointment.html">Appointment</a>
+      </div>
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="head-top">
+            <div class="container-fluid">
+               <div class="row d_flex">
+                  <div class="col-sm-3">
+                     <div class="logo">
+                        <a href="index.html"><img src="{% static 'johnlandstudio/images/logo2.png' %}" /></a>
+                     </div>
+                  </div>
+                  <div class="col-sm-9">
+                     <ul class="email text_align_right">
+                     
+                        <li> <button class="openbtn" onclick="openNav()"><img src="{% static 'johnlandstudio/images/menu_btn.png' %}"></button></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header -->
+      <!-- about -->
+      <div id="about" class="about">
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class="col-md-6">
+                  <div class="titlepage text_align_left">
+                     <h2>About Us</h2>
+                     <p>Johnland Studio</p>
+                     <a class="read_more" href="about.html">Read More</a>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img">
+                     <figure><img class="img_responsive" src="{% static 'johnlandstudio/images/about_img.jpg' %}" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+      <!--location-->
+      <div class="col-xl-70 col-lg-30 wow slideInUp" data-wow-delay="0.6s">
+            <iframe class="position-relative rounded w-100 h-130"
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15958.721895000508!2d37.1252676!3d-0.4762778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182863d856e48ab3%3A0xbe88bf53203b4b8c!2sJohnland%20Studio!5e0!3m2!1sen!2ske!4v1692783958815!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+      </div>
+      <!--endlocation-->
+
+      <!-- footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <a class="logo_footer"><img src="{% static 'johnlandstudio/images/logo2.png' %}" alt="#"/></a>
+                  </div>
+                  <div class="col-md-5">
+                     <div class="Informa conta">
+                        <h3>Adderess</h3>
+                        <ul>
+                           <li> Victors Chapel, <br>Karatina
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="Informa helpful">
+                        <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="about.html">About</a></li>
+                           <li><a href="service.html">Services</a></li>
+                           <li><a href="shop.html">Shop</a></li>
+                           <li><a href="contact.html">Contact</a></li>
+                           <li><a href="appointment.html">Appointment</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="Informa conta">
+                        <h3>Contact Us</h3>
+                        <ul>
+                           <li> <a href="Javascript:void(0)"> 897648934
+                              </a>
+                           </li>
+                           <li> <a href="Javascript:void(0)">  john123@gmail.com
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <ul class="social_icon text_align_center">
+                        <li> <a href="Javascript:void(0)"><i class="fa fa-facebook-f"></i></a></li>
+                        <li> <a href="Javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+                        <li> <a href="Javascript:void(0)"><i class="fa fa-youtube"></i></a></li>
+                        <li> <a href="Javascript:void(0)"><i class="fa fa-whatsapp"></i></a></li>
+                        <li> <a href="Javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-3">
+                     <div class="Informa">
+                        <h3>Newsletter</h3>
+                        <form class="newslatter_form">
+                           <input class="ente" placeholder="Enter your email" type="text" name="Enter your email">
+                           <button class="subs_btn">Subscribe</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright text_align_center">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-10 offset-md-1">
+                        <p>© 2020 All Rights Reserved. Design by John Mwangi <a href="https://html.design/"> Johnland Studio</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="{% static 'johnlandstudio/js/jquery.min.js' %}"></script>
+      <script src="{% static 'johnlandstudio/js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'johnlandstudio/js/jquery-3.0.0.min.js' %}"></script>
+      <script src="{% static 'johnlandstudio/js/custom.js' %}"></script>
+   </body>
+</html>
